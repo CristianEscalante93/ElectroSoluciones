@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+    <link rel="shortcut icon" href="../imagenes/lampara.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato&family=Sansita&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="headerGrid">
+        <!-- Barra de navegacion con img con link-->
+        <div class="barra">
+            <a href="../index.html" target="_blank" rel="">
+                <img src="../imagenes/lampara.jpg" alt="lampara" class="logo" />
+            </a>
+            <h1>Electrosoluciones</h1>
+        </div>
+        <nav class="barra">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./opiniones.html">Opiniones</a></li>
+                <li><a href="./trabajos.realizados.html">Trabajos realizados</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./contactenos.html">Contactenos</a></li>
+            </ul>
+        </nav>
+        <div class="menudesplegable">
+            🍔
+        </div>
+    </header>
+    <main class="main__contactenos">
+        <!-- formulario de contacto -->
+        <article class="contacto">
+            <h2 class="tituloContacto">Contacto</h2>
+            <form action="" method="" enctype="" class="contactoGrid" >
+                    <label for="nombre">Ingrese su nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre..." />
+                    <label for="apellido">Ingrese su apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido..." />
+                    <label for="correo">Ingrese email</label>
+                    <input type="email" id="correo" name="correo" placeholder="Email..." />
+                    <label for="Estado">Estado civil</label>
+                    <select name="Estado" id="Estado">
+                        <option value="Soltero">Soltero</option>
+                        <option value="Casado">Casado</option>
+                    </select>
+                    <label for="newsletter">Suscripcion a nuestro newsletter</label>
+                    <input type="checkbox" id="newsletter" />
+                    <label for="consulta">Ingrese su mensaje</label>
+                    <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Consulta..."></textarea>
+                    <fieldset>
+                        <legend>Tipo de mensaje</legend>
+                        <label for="consulta">Consulta</label>
+                        <input type="radio" id="consulta" name="contacto" />
+                        <label for="opinion">Opinion</label>
+                        <input type="radio" id="opinion" name="contacto" />
+                    </fieldset>
+                    <button type="submit" class="botonOp">Enviar</button>
+                    <button type="reset" class="botonOp">Limpiar</button>
+            </form>
+        </article>
+    </main>
+    <!-- footer con sus link de contacto -->
+    <footer>
+        <ul class="contactos">
+            <li><a href="./contactenos.html">Contactenos</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100063765990228" target="_blank">Electrosoluciones.Facebook</a></li>
+            <li><a href="" target="_blank">Electrosoluciones.Instagram</a></li>
+            <li><a href="" target="_blank">electrosoluciones.2@gmail.com</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

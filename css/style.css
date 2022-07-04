@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Sansita', sans-serif;
+} 
+
+/* INDEX */
+/* Barra de nav */
+.headerGrid {
+    background-color: black;
+    color: gold;
+    grid-template-columns: repeat(2,auto);
+    display: grid;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.menudesplegable {
+    display: none;
+}
+
+
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.barra {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+nav a{
+    color: gold;
+}
+
+
+.barra ul {
+    display: flex;
+}
+
+.barra ul li{
+    margin: 0px 20px;
+}
+
+
+/* MAIN */
+/* somos */
+main {
+    background-color: rgb(184, 101, 12);
+}
+.somos{
+    display: grid;
+    grid-template-columns: 400px auto;
+    border-style: double;
+    border-color: gold;
+}
+.somos__titulo{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-style: double;
+    border-color: gold;
+}
+.somos__desc{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+.logo__somos {
+    width: 400px;
+    height: 400px;
+}
+
+/* Opiniones */
+
+.opGrid {
+    display: grid;
+    background-color: beige;
+    grid-template-rows: repeat(2,auto);
+}
+.op__titulo{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+}
+.opiniones {
+    display: flex;
+    justify-content: center;
+    border-style: dashed;
+    border-color: gold;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.op__c {
+    border-style: solid;
+    background-color: black;
+    color: gold;
+    padding: 10px;
+    margin: 5px 0;
+}
+.op__op {
+    border-style: solid;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.infoTrabajos{
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Trabajos realizados  */
+
+.trabGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+.trabajos{
+    background-color: beige;
+    color: rgb(184, 101, 12);
+    border: outset;
+    border-color:gray;
+    margin: 10px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titulo__trab {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    padding: 10px;
+}
+.titulo2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+.imgTrabajo {
+    width: 200px; 
+    height: 300px;
+    padding: 5px 0;
+}
+.boton {
+    background-color: rgb(184, 101, 12);
+    color: beige;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border-color: black;
+    margin: 5px 0;
+
+}
+
+/* FOOTER */
+
+.contactos{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    height: 70px;
+    padding: 10px;
+    color: gold;
+    background-color: black
+}
+
+footer ul li a {
+    color: gold;
+    padding: 20px;
+}
+
+/* OPINIONES */
+.cuadroOp {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    padding: 5px;
+}
+.botonOp {
+    background-color: beige;
+    color: rgb(184, 101, 12);
+    padding: 5px;
+    border-radius: 5px;
+    border-color: black;
+}
+.op__ti{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+    .descOpinion {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+/* TRABAJOS REALIZADOS */
+
+.trab {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: space-around;
+    padding: 20px ;
+}
+
+.descTrabajo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* SERVICIOS */
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: start;
+    align-items: start;
+    padding: 20px;
+    border:  20px;
+    background-image: url(../imagenes/herramientas_amarillo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.serv {
+    padding: 10px;
+    list-style: decimal;
+}
+
+.titulServ {
+    display: flex;
+    justify-content: center;
+}
+.tablaServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CONTACTENOS */
+
+.contacto{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 5px;
+    justify-content: center;
+    color: gold;
+}
+.contactoGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    justify-items: center;
+    align-items: center;
+    color: gold;
+}
+.tituloContacto {
+    justify-self: center;
+}
+
+.main__contactenos {
+    background-image: url(../imagenes/foco2.jfif);
+    background-size: contain;
+}
+
+
+/* Media queri */
+
+@media screen and (max-width:910px) {
+    .headerGrid {
+        background-color: black;
+        color: gold;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        display: grid;
+        align-content: center;
+        justify-content: center;
+    }
+    .barra{
+        justify-content: center;
+        padding: 5px;
+    }
+    .contactos {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+    .trab {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .logo__somos {
+        display: none;
+    }
+    .somos{
+        display: grid;
+        grid-template-columns: 1fr;
+        border-style: double;
+        border-color: gold;
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+    .trabGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .trab {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .servicios {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .headerGrid nav {
+        display: none;
+    }
+    .contactos{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-evenly;
+        height: 100px;
+    }
+    .servicios {
+        background-image: url(../imagenes/herramientas_amarillo.jpg);
+        background-size: contain;
+        background-position: right;
+    }
+    .tablaServicios {
+        align-items: flex-start;
+    }
+    .menudesplegable {
+        display: grid;
+        justify-items: center;
+        height: 30px ;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .titulo2 {
+        display: grid;
+        padding: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+    
+}
+

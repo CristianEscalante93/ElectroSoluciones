@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opiniones</title>
+    <link rel="shortcut icon" href="../imagenes/lampara.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato&family=Sansita&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="headerGrid">
+        <!-- Barra de navegacion con img con link-->
+        <div class="barra">
+            <a href="../index.html" target="_blank" rel="">
+                <img src="../imagenes/lampara.jpg" alt="lampara" class="logo" />
+            </a>
+            <h1>Electrosoluciones</h1>
+        </div>
+        <nav class="barra">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./opiniones.html">Opiniones</a></li>
+                <li><a href="./trabajos.realizados.html">Trabajos realizados</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./contactenos.html">Contactenos</a></li>
+            </ul>
+        </nav>
+        <div class="menudesplegable">
+            🍔
+        </div>
+    </header>
+    <main>
+        <!-- Ultimos opiniones -->
+        <h2 class="op__titulo">Opiniones</h2>
+        <article class="opGrid">
+            <div class="opiniones">
+                <h3 class="op__c">Cliente 1</h3>
+                <p class="descOpinion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis corporis omnis incidunt minima pariatur deserunt fugiat sed nulla laboriosam quod, vitae in nihil! Quos voluptatibus cumque corporis velit facilis perferendis!</p>
+                <h4 class="op__op">Opinion: Buena</h4>      
+            </div>
+            <div class="opiniones">
+                <h3 class="op__c">Cliente 2</h3>
+                <p class="descOpinion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis corporis omnis incidunt minima pariatur deserunt fugiat sed nulla laboriosam quod, vitae in nihil! Quos voluptatibus cumque corporis velit facilis perferendis!</p>
+                <h4 class="op__op">Opinion: Buena</h4>
+            </div>
+        </article>
+        <!-- formulario de opiniones -->
+        <article>
+            <form action="" class="cuadroOp">
+                <label for="opinion" class="op__ti">Ingrese su opinion</label>
+                <div>
+                    <textarea name="opinion" id="opinion" cols="30" rows="30" placeholder="Opinion..."></textarea>
+                </div>
+                <div>
+                    <label for="Calificacion">Calificacion</label>
+                    <select name="Calificacion" id="Calificacion" class="botonOp">
+                        <option value="Buena">Buena</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Mala">Mala</option>
+                    </select>
+                    <button type="submit" class="botonOp">Enviar</button>
+                    <button type="reset" class="botonOp">Borrar</button>
+                </div>
+            </form>
+        </article>
+    </main>
+
+    <!-- footer con sus link de contacto -->
+    <footer>
+        <ul class="contactos">
+            <li><a href="./contactenos.html">Contactenos</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100063765990228" target="_blank">Electrosoluciones.Facebook</a></li>
+            <li><a href="" target="_blank">Electrosoluciones.Instagram</a></li>
+            <li><a href="" target="_blank">electrosoluciones.2@gmail.com</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
