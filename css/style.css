@@ -34,14 +34,20 @@ body {
 
 .barra {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
+    font-weight: bold;
 }
 
 nav a{
     color: gold;
+    transition: all 0.3s;
 }
-
+nav a:hover {
+    border-radius: 5px;
+    background-color: yellow;
+    color: black;
+    padding: 5px;
+}
 
 .barra ul {
     display: flex;
@@ -55,13 +61,14 @@ nav a{
 /* MAIN */
 /* somos */
 main {
-    background-color: rgb(184, 101, 12);
+    background-image: linear-gradient(45deg,rgb(77, 77, 20), gold);
 }
 .somos{
     display: grid;
     grid-template-columns: 400px auto;
+    color: black;
     border-style: double;
-    border-color: gold;
+    border-color: black;
 }
 .somos__titulo{
     display: flex;
@@ -79,20 +86,27 @@ main {
 .logo__somos {
     width: 400px;
     height: 400px;
+    transition: all 0.3s;
 }
 
+/* Movimiento del logo */
+
+.logo__somos:hover {
+    transform: translate(15px, 10px);
+    border-radius: 20px;
+    border-style: double;
+    border-color: gold;
+}
 /* Opiniones */
 
 .opGrid {
     display: grid;
-    background-color: beige;
     grid-template-rows: repeat(2,auto);
 }
 .op__titulo{
     padding: 10px;
     display: flex;
     justify-content: center;
-    background-color: beige;
 }
 .opiniones {
     display: flex;
@@ -104,6 +118,7 @@ main {
 }
 .op__c {
     border-style: solid;
+    border-radius: 10px;
     background-color: black;
     color: gold;
     padding: 10px;
@@ -126,12 +141,14 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .trabajos{
     background-color: beige;
     color: rgb(184, 101, 12);
     border: outset;
+    border-radius: 10px;
     border-color:gray;
     margin: 10px;
     width: auto;
@@ -140,8 +157,21 @@ main {
     align-items: center;
     justify-content: center;
 }
+
+/* Efecto de las tarjetas */
+
+.sombra {
+    transition: all 0.3s;
+    }
+
+.sombra:hover {
+    box-shadow: 0 25px 50px -12px rgb(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+
 .titulo__trab {
-    font-size: 20px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     text-decoration: underline;
@@ -182,6 +212,18 @@ main {
     padding: 10px;
     color: gold;
     background-color: black
+}
+
+/* Animacion de footer */
+
+.contactos li a{
+    transition: all 0.3s;
+}
+.contactos li a:hover{
+    border-radius: 5px;
+    background-color: yellow;
+    color: black;
+    padding: 5px;
 }
 
 footer ul li a {
@@ -286,6 +328,16 @@ footer ul li a {
     background-size: contain;
 }
 
+.aniContacto {
+    transition: all 0.3s;
+}
+
+.aniContacto:hover {
+    transform: scale(1.5);
+    background-color: yellow;
+    color: black;
+}
+
 
 /* Media queri */
 
@@ -350,9 +402,7 @@ footer ul li a {
         height: 100px;
     }
     .servicios {
-        background-image: url(../imagenes/herramientas_amarillo.jpg);
-        background-size: contain;
-        background-position: right;
+        background-image: linear-gradient(45deg,rgb(77, 77, 20), gold);
     }
     .tablaServicios {
         align-items: flex-start;
