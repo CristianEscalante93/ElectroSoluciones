@@ -12,51 +12,29 @@ body {
 
 /* INDEX */
 /* Barra de nav */
-.headerGrid {
+.header {
     background-color: black;
-    color: gold;
-    grid-template-columns: repeat(2,auto);
-    display: grid;
-    align-content: center;
-    justify-content: space-between;
 }
-
-.menudesplegable {
-    display: none;
-}
-
-
 
 .logo {
     height: 50px;
     margin-right: 20px;
 }
 
-.barra {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-}
-
-nav a{
+.colorNav{
     color: gold;
+    border-radius: 10px;
     transition: all 0.3s;
 }
-nav a:hover {
+.colorNav:hover {
     border-radius: 5px;
-    background-color: yellow;
+    background-color: gold;
     color: black;
-    padding: 5px;
 }
 
-.barra ul {
+/* .barra ul {
     display: flex;
-}
-
-.barra ul li{
-    margin: 0px 20px;
-}
-
+} */
 
 /* MAIN */
 /* somos */
@@ -145,22 +123,19 @@ main {
 }
 
 .trabajos{
-    background-color: beige;
-    color: rgb(184, 101, 12);
-    border: outset;
-    border-radius: 10px;
-    border-color:gray;
     margin: 10px;
-    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: auto;
 }
 
 /* Efecto de las tarjetas */
 
 .sombra {
+    background-color: black;
+    color: white;
     transition: all 0.3s;
     }
 
@@ -174,7 +149,6 @@ main {
     font-size: 30px;
     display: flex;
     justify-content: center;
-    text-decoration: underline;
     padding: 10px;
 }
 .titulo2 {
@@ -203,33 +177,24 @@ main {
 /* FOOTER */
 
 .contactos{
-    display: grid;
-    grid-template-columns: repeat(4,auto);
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    height: 70px;
-    padding: 10px;
-    color: gold;
-    background-color: black
+    height: 100px;
+    background-color: black;
 }
 
 /* Animacion de footer */
 
-.contactos li a{
+.efectoFoot{
+    color: yellow;
     transition: all 0.3s;
 }
-.contactos li a:hover{
+.efectoFoot:hover{
     border-radius: 5px;
     background-color: yellow;
     color: black;
     padding: 5px;
+    transform: scale(1.2);
 }
 
-footer ul li a {
-    color: gold;
-    padding: 20px;
-}
 
 /* OPINIONES */
 .cuadroOp {
@@ -253,10 +218,10 @@ footer ul li a {
     font-weight: bold;
 }
 
-    .descOpinion {
-        display: flex;
-        justify-content: center;
-        padding: 10px;
+.descOpinion {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
     }
 
 /* TRABAJOS REALIZADOS */
@@ -291,7 +256,9 @@ footer ul li a {
     padding: 10px;
     list-style: decimal;
 }
-
+table {
+    border: black 2px solid
+}
 .titulServ {
     display: flex;
     justify-content: center;
@@ -310,6 +277,11 @@ footer ul li a {
     row-gap: 5px;
     justify-content: center;
     color: gold;
+}
+.centradoContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contactoGrid{
     display: grid;
@@ -333,7 +305,7 @@ footer ul li a {
 }
 
 .aniContacto:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     background-color: yellow;
     color: black;
 }
@@ -342,19 +314,7 @@ footer ul li a {
 /* Media queri */
 
 @media screen and (max-width:910px) {
-    .headerGrid {
-        background-color: black;
-        color: gold;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, auto);
-        display: grid;
-        align-content: center;
-        justify-content: center;
-    }
-    .barra{
-        justify-content: center;
-        padding: 5px;
-    }
+    
     .contactos {
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(2, auto);
@@ -392,9 +352,6 @@ footer ul li a {
 }
 
 @media screen and (max-width: 480px) {
-    .headerGrid nav {
-        display: none;
-    }
     .contactos{
         display: grid;
         grid-template-columns: 1fr;
@@ -407,12 +364,12 @@ footer ul li a {
     .tablaServicios {
         align-items: flex-start;
     }
-    .menudesplegable {
+    .trabajos{
         display: grid;
+        grid-template-columns: 1fr;
         justify-items: center;
-        height: 30px ;
-        font-size: 20px;
     }
+    
 }
 
 @media screen and (max-width:320px) {

@@ -6,80 +6,254 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajos</title>
     <link rel="shortcut icon" href="../imagenes/lampara.jpg" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato&family=Sansita&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header class="headerGrid">
-        <!-- Barra de navegacion con img con link-->
-        <div class="barra">
-            <a href="../index.html" target="_blank" rel="">
-                <img src="../imagenes/lampara.jpg" alt="lampara" class="logo" />
-            </a>
-            <h1>Electrosoluciones</h1>
-        </div>
-        <nav class="barra">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./opiniones.html">Opiniones</a></li>
-                <li><a href="./trabajos.realizados.html">Trabajos realizados</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./contactenos.html">Contactenos</a></li>
-            </ul>
+    <!-- Barra de navegacion con img con link-->
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand text-warning" href="#"><img src="../imagenes/lampara.jpg" alt="lampara" class="logo" />Electrosoluciones</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-warning"></span>
+                </button> 
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto fw-bold">
+                        <li class="nav-item"><a class="nav-link colorNav" aria-current="page" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link colorNav" href="./opiniones.html">Opiniones</a></li>
+                        <li class="nav-item"><a class="nav-link colorNav" href="./trabajos.realizados.html">Trabajos realizados</a></li>
+                        <li class="nav-item"><a class="nav-link colorNav" href="./servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link colorNav" href="./contactenos.html">Contactenos</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <div class="menudesplegable">
-            🍔
-        </div>
     </header>
 
     <!-- trabajos realizados -->
 
     <main>
-        <h2 class="titulo__trab">Trabajos realizados</h2>
+        <h2 class="titulo__trab">TRABAJOS REALIZADOS</h2>
         <section class="trab">
-            <article class="trabajos sombra" >
-                <h4 class="titulo2">Armado de tablero de proteccion</h4>
-                <p class="descTrabajo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque velit voluptate ea. Sapiente recusandae necessitatibus dolor ex voluptates. Non aut delectus hic, laborum soluta consectetur fuga quas rerum quis.</p>
-                <img src="../imagenes/tablero.jpg" alt="tablero" class="imgTrabajo" />
+            <article class="trabajos ">
+                <div class="card trabajos sombra" style="width: auto;">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../imagenes/tablero.jpg" class="d-block w-100 card-img-top " alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/img_electro.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/LOGO Electro.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">ARMADO DE TABLERO DE PROTECCION</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="./paginas/trabajos.realizados.html" class="btn btn-primary w-100 bg-warning text-black">Ver mas</a>
+                    </div>
+                </div>
             </article>
-            <article class="trabajos sombra" >
-                <h4 class="titulo2">Armado de tablero de proteccion</h4>
-                <p class="descTrabajo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque velit voluptate ea. Sapiente recusandae necessitatibus dolor ex voluptates. Non aut delectus hic, laborum soluta consectetur fuga quas rerum quis.</p>
-                <img src="../imagenes/tablero.jpg" alt="tablero" class="imgTrabajo" />
+
+            <article class="trabajos">
+                <div class="card trabajos sombra" style="width: auto;">
+                    <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../imagenes/tablero.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/img_electro.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/LOGO Electro.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">ARMADO DE TABLERO DE PROTECCION</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="./paginas/trabajos.realizados.html" class="btn btn-primary w-100 bg-warning text-black">Ver mas</a>
+                    </div>
+                </div>
             </article>
-            <article class="trabajos sombra" >
-                <h4 class="titulo2">Armado de tablero de proteccion</h4>
-                <p class="descTrabajo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque velit voluptate ea. Sapiente recusandae necessitatibus dolor ex voluptates. Non aut delectus hic, laborum soluta consectetur fuga quas rerum quis.</p>
-                <img src="../imagenes/tablero.jpg" alt="tablero" class="imgTrabajo" />
+            
+            <article class="trabajos">
+                <div class="card trabajos sombra" style="width: auto;">
+                    <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../imagenes/tablero.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/img_electro.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/LOGO Electro.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">ARMADO DE TABLERO DE PROTECCION</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="./paginas/trabajos.realizados.html" class="btn btn-primary w-100 bg-warning text-black">Ver mas</a>
+                    </div>
+                </div>
             </article>
-            <article class="trabajos sombra" >
-                <h4 class="titulo2">Armado de tablero de proteccion</h4>
-                <p class="descTrabajo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque velit voluptate ea. Sapiente recusandae necessitatibus dolor ex voluptates. Non aut delectus hic, laborum soluta consectetur fuga quas rerum quis.</p>
-                <img src="../imagenes/tablero.jpg" alt="tablero" class="imgTrabajo" />
+            
+            <article class="trabajos">
+                <div class="card trabajos sombra" style="width: auto;">
+                    <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../imagenes/tablero.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/img_electro.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/LOGO Electro.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">ARMADO DE TABLERO DE PROTECCION</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="./paginas/trabajos.realizados.html" class="btn btn-primary w-100 bg-warning text-black">Ver mas</a>
+                    </div>
+                </div>
             </article>
-            <article class="trabajos sombra" >
-                <h4 class="titulo2">Armado de tablero de proteccion</h4>
-                <p class="descTrabajo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque velit voluptate ea. Sapiente recusandae necessitatibus dolor ex voluptates. Non aut delectus hic, laborum soluta consectetur fuga quas rerum quis.</p>
-                <img src="../imagenes/tablero.jpg" alt="tablero" class="imgTrabajo" />
+
+            <article class="trabajos">
+                <div class="card trabajos sombra" style="width: auto;">
+                    <div id="carouselExampleControls5" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../imagenes/tablero.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/img_electro.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/LOGO Electro.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">ARMADO DE TABLERO DE PROTECCION</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="./paginas/trabajos.realizados.html" class="btn btn-primary w-100 bg-warning text-black">Ver mas</a>
+                    </div>
+                </div>
             </article>
-            <article class="trabajos sombra" >
-                <h4 class="titulo2">Armado de tablero de proteccion</h4>
-                <p class="descTrabajo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque velit voluptate ea. Sapiente recusandae necessitatibus dolor ex voluptates. Non aut delectus hic, laborum soluta consectetur fuga quas rerum quis.</p>
-                <img src="../imagenes/tablero.jpg" alt="tablero" class="imgTrabajo" />
+            
+            <article class="trabajos">
+                <div class="card trabajos sombra" style="width: auto;">
+                    <div id="carouselExampleControls6" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../imagenes/tablero.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/img_electro.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/LOGO Electro.jpg" class="d-block w-100 card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">ARMADO DE TABLERO DE PROTECCION</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="./paginas/trabajos.realizados.html" class="btn btn-primary w-100 bg-warning text-black">Ver mas</a>
+                    </div>
+                </div>
             </article>
         </section>
     </main>
 
     <!-- footer con sus link de contacto -->
-    <footer>
-        <ul class="contactos">
-            <li><a href="./contactenos.html">Contactenos</a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=100063765990228" target="_blank">Electrosoluciones.Facebook</a></li>
-            <li><a href="" target="_blank">Electrosoluciones.Instagram</a></li>
-            <li><a href="" target="_blank">electrosoluciones.2@gmail.com</a></li>
-        </ul>
+    <footer class="contactos d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class= "col-sm-3 col-md-3 d-flex justify-content-center">
+                    <a href="./paginas/contactenos.html" class="efectoFoot text-decoration-none">Contactenos</a>
+                </div>
+                <div class= "col-sm-3 col-md-3 d-flex justify-content-center">
+                    <a href="https://www.facebook.com/profile.php?id=100063765990228" target="_blank" class=" efectoFoot"><i class="bi bi-facebook"></i></a>
+                </div>
+                <div class= "col-sm-3 col-md-3 d-flex justify-content-center">
+                    <a href="" target="_blank" class="efectoFoot"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class= "col-sm-3 col-md-3 d-flex justify-content-center">
+                    <a href="" target="_blank" class="efectoFoot"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <div class="position-fixed bottom-0 end-0 mb-5 me-4">
+        <a href="https://wa.me/5411"><img src="https://cdn.iconscout.com/icon/free/png-512/whatsapp-circle-1868968-1583132.png"alt="Whatsapp" width="60" height="60"/>
+        </a>
+    </div>
 </body>
 </html>
