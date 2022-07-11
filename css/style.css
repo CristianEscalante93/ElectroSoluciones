@@ -32,9 +32,6 @@ body {
     color: black;
 }
 
-/* .barra ul {
-    display: flex;
-} */
 
 /* MAIN */
 /* somos */
@@ -59,6 +56,7 @@ main {
     display: flex;
     justify-content: center;
     padding: 20px;
+    font-size: 20px;
 
 }
 .logo__somos {
@@ -128,8 +126,9 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: auto;
+    width: 100%;
 }
+
 
 /* Efecto de las tarjetas */
 
@@ -144,6 +143,16 @@ main {
     transform: scale(1.05);
 }
 
+.imagenT {
+    width: 100%;
+    height: 100%;
+}
+
+.tituloTarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .titulo__trab {
     font-size: 30px;
@@ -165,19 +174,17 @@ main {
     padding: 5px 0;
 }
 .boton {
-    background-color: rgb(184, 101, 12);
-    color: beige;
-    padding: 0.5rem;
-    border-radius: 5px;
-    border-color: black;
-    margin: 5px 0;
+    background-color: yellow;
+    color: black;
+    /* border-radius: 5px;
+    margin: 5px 0; */
 
 }
 
 /* FOOTER */
 
 .contactos{
-    height: 100px;
+    height: 80px;
     background-color: black;
 }
 
@@ -185,12 +192,17 @@ main {
 
 .efectoFoot{
     color: yellow;
+    padding: 5px;
+    font-size: 20px;
     transition: all 0.3s;
 }
 .efectoFoot:hover{
     border-radius: 5px;
     background-color: yellow;
     color: black;
+    display: flex;
+    justify-content: center;
+    width: 90%;
     padding: 5px;
     transform: scale(1.2);
 }
@@ -248,8 +260,6 @@ main {
     align-items: start;
     padding: 20px;
     border:  20px;
-    background-image: url(../imagenes/herramientas_amarillo.jpg);
-    background-size: cover;
     background-position: center;
 }
 .serv {
@@ -257,7 +267,14 @@ main {
     list-style: decimal;
 }
 table {
-    border: black 2px solid
+    border: black 2px solid;
+    padding: 10px;
+}
+table td {
+    padding: 5px;
+}
+table th {
+    padding: 5px;
 }
 .titulServ {
     display: flex;
@@ -296,8 +313,8 @@ table {
 }
 
 .main__contactenos {
-    background-image: url(../imagenes/foco2.jfif);
-    background-size: contain;
+    background-image: url(../imagenes/bombilla-fluorescente.webp);
+    background-size: cover;
 }
 
 .aniContacto {
@@ -315,10 +332,10 @@ table {
 
 @media screen and (max-width:910px) {
     
-    .contactos {
+    /* .contactos {
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(2, auto);
-    }
+    } */
     .trab {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -354,7 +371,7 @@ table {
 @media screen and (max-width: 480px) {
     .contactos{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         justify-content: space-evenly;
         height: 100px;
     }
