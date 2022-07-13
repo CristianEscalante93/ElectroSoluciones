@@ -23,7 +23,7 @@
             <div class="container">
                 <a class="navbar-brand text-warning" href="#"><img src="../imagenes/lampara.jpg" alt="lampara" class="logo" />Electrosoluciones</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon bg-warning"></span>
+                <span class="navbar-toggler-icon bg-warning botonNav"></span>
                 </button> 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto fw-bold">
@@ -38,53 +38,53 @@
         </nav>
     </header>
     
-    <main class="main__contactenos">
+    <main class="mainContactenos">
         <!-- formulario de contacto -->
-        <article class="contacto">
-            <h2 class="tituloContacto">Contacto</h2>
-            <form action="" method="" enctype="" class="contactoGrid" >
+        <article class="mainContactenos__contacto">
+            <h2 class="mainContactenos__contacto-titulo">Contacto</h2>
+            <form action="" method="" enctype="" class="mainContactenos__contacto-contactoGrid" >
                     <label for="nombre">Ingrese su nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre..." class="aniContacto"/>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre..." class="mainContactenos__contacto-animacion"/>
                     <label for="apellido">Ingrese su apellido</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Apellido..." class="aniContacto"/>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido..." class="mainContactenos__contacto-animacion"/>
                     <label for="correo">Ingrese email</label>
-                    <input type="email" id="correo" name="correo" placeholder="Email..." class="aniContacto"/>
+                    <input type="email" id="correo" name="correo" placeholder="Email..." class="mainContactenos__contacto-animacion"/>
                     <label for="Estado">Estado civil</label>
-                    <select name="Estado" id="Estado" class="aniContacto">
+                    <select name="Estado" id="Estado" class="mainContactenos__contacto-animacion">
                         <option value="Soltero">Soltero</option>
                         <option value="Casado">Casado</option>
                     </select>
                     <label for="newsletter">Suscripcion a nuestro newsletter</label>
                     <input type="checkbox" id="newsletter" />
                     <label for="consulta">Ingrese su mensaje</label>
-                    <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Consulta..." class="aniContacto"></textarea>
-                    <fieldset class="centradoContacto">
+                    <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Consulta..." class="mainContactenos__contacto-animacion"></textarea>
+                    <fieldset class="mainContactenos__contacto-centrado">
                         <legend>Tipo de mensaje</legend>
                         <label for="consulta">Consulta</label>
                         <input type="radio" id="consulta" name="contacto" />
                         <label for="opinion">Opinion</label>
                         <input type="radio" id="opinion" name="contacto" />
                     </fieldset>
-                    <button type="submit" class="botonOp aniContacto">Enviar</button>
-                    <button type="reset" class="botonOp aniContacto">Limpiar</button>
+                    <button type="submit" class="cuadroOp__boton mainContactenos__contacto-animacion">Enviar</button>
+                    <button type="reset" class="cuadroOp__boton mainContactenos__contacto-animacion">Limpiar</button>
             </form>
         </article>
     </main>
     <!-- footer con sus link de contacto -->
-    <footer class="contactos d-flex align-items-center">
+    <footer class="footer d-flex align-items-center">
         <div class="container">
             <div class="row">
                 <div class= "col-md-3 col-sm-6 col-6  d-flex justify-content-center">
-                    <a href="./paginas/contactenos.html" class="efectoFoot text-decoration-none">Contactenos</a>
+                    <a href="./paginas/contactenos.html" class="footer__efecto text-decoration-none">Contactenos</a>
                 </div>
                 <div class= "col-md-3 col-sm-6 col-6  d-flex justify-content-center">
-                    <a href="https://www.facebook.com/profile.php?id=100063765990228" target="_blank" class=" efectoFoot"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100063765990228" target="_blank" class=" footer__efecto"><i class="bi bi-facebook"></i></a>
                 </div>
                 <div class= "col-md-3 col-sm-6 col-6  d-flex justify-content-center">
-                    <a href="" target="_blank" class="efectoFoot"><i class="bi bi-instagram"></i></a>
+                    <a href="" target="_blank" class="footer__efecto"><i class="bi bi-instagram"></i></a>
                 </div>
                 <div class= "col-md-3 col-sm-6 col-6  d-flex justify-content-center">
-                    <a href="" target="_blank" class="efectoFoot"><i class="bi bi-envelope"></i></a>
+                    <a href="" target="_blank" class="footer__efecto"><i class="bi bi-envelope"></i></a>
                 </div>
             </div>
         </div>

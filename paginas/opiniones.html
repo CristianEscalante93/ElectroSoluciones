@@ -23,7 +23,7 @@
             <div class="container">
                 <a class="navbar-brand text-warning" href="#"><img src="../imagenes/lampara.jpg" alt="lampara" class="logo" />Electrosoluciones</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon bg-warning"></span>
+                <span class="navbar-toggler-icon bg-warning botonNav"></span>
                 </button> 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto fw-bold">
@@ -39,55 +39,57 @@
     </header>
     <main>
         <!-- Ultimos opiniones -->
-        <h2 class="op__titulo">Opiniones</h2>
-        <article class="opGrid">
-            <div class="opiniones">
-                <h3 class="op__c">Juan.14</h3>
-                <p class="descOpinion">Realizaron un excelente trabajo, muy prolijo y bien hecho. muy recomendables!</p>
-                <h4 class="op__op">Opinion: Buena</h4>      
-            </div>
-            <div class="opiniones">
-                <h3 class="op__c">Jose_26</h3>
-                <p class="descOpinion">Muy buen trabajo, mucha seriedad y responsabilidad. Solucionaron todo en muy poco tiempo, super recomendables!!!</p>
-                <h4 class="op__op">Opinion: Buena</h4>
-            </div>
-        </article>
-        <!-- formulario de opiniones -->
-        <article>
-            <form action="" class="cuadroOp">
-                <label for="opinion" class="op__ti">Ingrese su opinion</label>
-                <div>
-                    <textarea name="opinion" id="opinion" cols="30" rows="30" placeholder="Opinion..."></textarea>
+        <div class="container">
+            <h2 class="op__titulo">Opiniones</h2>
+            <article class="opGrid">
+                <div class="opGrid__opiniones">
+                    <h3 class="opGrid__opiniones-cliente">Juan.14</h3>
+                    <p class="opGrid__opiniones-descrip">Realizaron un excelente trabajo, muy prolijo y bien hecho. muy recomendables!</p>
+                    <h4 class="opGrid__opiniones-calif">Opinion: Buena</h4>      
                 </div>
-                <div>
-                    <label for="Calificacion">Calificacion</label>
-                    <select name="Calificacion" id="Calificacion" class="botonOp">
-                        <option value="Buena">Buena</option>
-                        <option value="Regular">Regular</option>
-                        <option value="Mala">Mala</option>
-                    </select>
-                    <button type="submit" class="botonOp">Enviar</button>
-                    <button type="reset" class="botonOp">Borrar</button>
+                <div class="opGrid__opiniones">
+                    <h3 class="opGrid__opiniones-cliente">Jose_26</h3>
+                    <p class="opGrid__opiniones-descrip">Muy buen trabajo, mucha seriedad y responsabilidad. Solucionaron todo en muy poco tiempo, super recomendables!!!</p>
+                    <h4 class="opGrid__opiniones-calif">Opinion: Buena</h4>
                 </div>
-            </form>
-        </article>
-    </main>
-
+            </article>
+            <!-- formulario de opiniones -->
+            <article>
+                <form action="" class="cuadroOp">
+                    <label for="opinion" class="cuadroOp__titulo">Ingrese su opinion</label>
+                    <div>
+                        <textarea name="opinion" id="opinion" cols="30" rows="30" placeholder="Opinion..."></textarea>
+                    </div>
+                    <div>
+                        <label for="Calificacion">Calificacion</label>
+                        <select name="Calificacion" id="Calificacion" class="cuadroOp__boton">
+                            <option value="Buena">Buena</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Mala">Mala</option>
+                        </select>
+                        <button type="submit" class="cuadroOp__boton">Enviar</button>
+                        <button type="reset" class="cuadroOp__boton">Borrar</button>
+                    </div>
+                </form>
+            </article>
+        </div>
+        </main>
+        
     <!-- footer con sus link de contacto -->
-    <footer class="contactos d-flex align-items-center">
+    <footer class="footer d-flex align-items-center">
         <div class="container">
             <div class="row">
                 <div class= "col-md-3 col-sm-6 col-6  d-flex justify-content-center">
-                    <a href="./paginas/contactenos.html" class="efectoFoot text-decoration-none">Contactenos</a>
+                    <a href="./paginas/contactenos.html" class="footer__efecto text-decoration-none">Contactenos</a>
                 </div>
                 <div class= "col-md-3 col-sm-6 col-6  d-flex justify-content-center">
-                    <a href="https://www.facebook.com/profile.php?id=100063765990228" target="_blank" class=" efectoFoot"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100063765990228" target="_blank" class=" footer__efecto"><i class="bi bi-facebook"></i></a>
                 </div>
                 <div class= "col-md-3 col-sm-6 col-6  d-flex justify-content-center">
-                    <a href="" target="_blank" class="efectoFoot"><i class="bi bi-instagram"></i></a>
+                    <a href="" target="_blank" class="footer__efecto"><i class="bi bi-instagram"></i></a>
                 </div>
                 <div class= "col-md-3 col-sm-6 col-6  d-flex justify-content-center">
-                    <a href="" target="_blank" class="efectoFoot"><i class="bi bi-envelope"></i></a>
+                    <a href="" target="_blank" class="footer__efecto"><i class="bi bi-envelope"></i></a>
                 </div>
             </div>
         </div>
