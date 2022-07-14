@@ -1,0 +1,25 @@
+.header {
+    background-color: $night;
+}
+
+.botonNav {
+    border-style: solid;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.colorNav{
+    color: $gold;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.colorNav:hover {
+    border-radius: 5px;
+    background-color: $gold;
+    color: $night;
+}
+
