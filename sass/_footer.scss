@@ -1,15 +1,15 @@
 .footer{
     height: 80px;
-    background-color: $night;
+    background-color: map-get($map: $colores, $key: night);
     &__efecto{
-        color: $yell;
+        color: map-get($map: $colores, $key: yell);
         padding: 5px;
         font-size: 20px;
         transition: all 0.3s;
         &:hover{
             border-radius: 5px;
-            background-color: $yell;
-            color: $night;
+            background-color: map-get($map: $colores, $key: yell);
+            color: map-get($map: $colores, $key: night);
             display: flex;
             justify-content: center;
             width: 90%;

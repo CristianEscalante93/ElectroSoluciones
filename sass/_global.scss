@@ -11,5 +11,5 @@ body {
 } 
 
 main {
-    background-image: $back; 
+    background-image: map-get($map: $colores, $key: back); 
 }

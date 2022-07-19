@@ -1,10 +1,13 @@
 .header {
-    background-color: $night;
+    background-color: map-get($map: $colores, $key: night);
 }
-
+.bot {
+    color: map-get($map: $colores, $key: night);
+    border-radius: 10px;
+}
 .botonNav {
+    @extend .bot;
     border-style: solid;
-    border-radius: 5px;
     margin: 5px 0;
 }
 .logo {
@@ -13,13 +16,11 @@
 }
 
 .colorNav{
-    color: $gold;
-    border-radius: 10px;
+    @extend .bot;
+    color: map-get($map: $colores, $key: gold1);
     transition: all 0.3s;
+    &:hover {
+        @extend .bot;
+        background-color: map-get($map: $colores, $key: gold1);
+    }
 }
-.colorNav:hover {
-    border-radius: 5px;
-    background-color: $gold;
-    color: $night;
-}
-
