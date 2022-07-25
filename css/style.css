@@ -42,7 +42,7 @@ main {
   .somos__titulo {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
     border-style: double;
     border-color: gold; }
   .somos__desc {
@@ -131,7 +131,8 @@ main {
 .titulo__trab {
   font-size: 30px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding: 0px 30px; }
 
 .boton {
   background-color: yellow;
@@ -212,7 +213,8 @@ table {
       row-gap: 5px;
       justify-items: center;
       align-items: center;
-      color: gold; }
+      color: yellow;
+      text-shadow: 4px 3px 4px black; }
     .mainContactenos__contacto-titulo {
       justify-self: center; }
     .mainContactenos__contacto-animacion {
